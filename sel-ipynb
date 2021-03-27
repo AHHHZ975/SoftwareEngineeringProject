@@ -1,0 +1,196 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from selenium import webdriver\n",
+    "from selenium import webdriver\n",
+    "from selenium.webdriver.common.keys import Keys\n",
+    "from selenium.webdriver.firefox.firefox_binary import FirefoxBinary\n",
+    "from selenium.webdriver.common.action_chains import ActionChains"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import time"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# downloading music \n",
+    "\n",
+    "url = 'https://freemp3cloud.com/'\n",
+    "search_text= \"cat\"\n",
+    "\n",
+    "out = []\n",
+    "driver = webdriver.Firefox(executable_path=r'./geckodriver.exe')\n",
+    "driver.get(url)\n",
+    "searchbox  = driver.find_element_by_id('searchSong') \n",
+    "searchbox.click()\n",
+    "searchbox.send_keys(search_text)\n",
+    "searchbox.send_keys(Keys.ENTER)\n",
+    "time.sleep(2)\n",
+    "\n",
+    "\n",
+    "links = driver.find_elements_by_class_name(\"pi-data\")\n",
+    "for link in links:\n",
+    "    att = {}\n",
+    "    artist = link.find_element_by_class_name(\"s-artist\").text \n",
+    "    title = link.find_element_by_class_name(\"s-title\").text\n",
+    "    times = link.find_element_by_class_name(\"s-time\").text\n",
+    "    download_link = link.find_element_by_tag_name(\"a\").get_attribute('href')\n",
+    "    att['artist'] = artist\n",
+    "    att['title'] = title\n",
+    "    att['time'] = times\n",
+    "    att['download_link'] = download_link\n",
+    "    out.append(att)\n",
+    "driver.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# save in file\n",
+    "import json\n",
+    "with open('sounds.json', 'w') as f:\n",
+    "    json.dump(out, f)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# downloading lyrics\n",
+    "\n",
+    "limit = 3 # limitation count of scraping\n",
+    "\n",
+    "def get_lyric(href_link):\n",
+    "    \"\"\"\n",
+    "    download lyric from a href link\n",
+    "    \n",
+    "    param: href_link: The input link\n",
+    "    return: lyric: lyric text\n",
+    "    \"\"\"\n",
+    "    driver1 = webdriver.Firefox(executable_path=r'./geckodriver.exe')\n",
+    "    driver1.get(href_link)\n",
+    "    lyric = driver1.find_element_by_class_name(\"col-lg-6\").text\n",
+    "    driver1.close()\n",
+    "    return lyric\n",
+    "\n",
+    "search_text = \"cat\"\n",
+    "url = \"https://www.lyricfinder.org/search/lyrics/\" + search_text\n",
+    "driver = webdriver.Firefox(executable_path=r'./geckodriver.exe')\n",
+    "driver.get(url)\n",
+    "out = []\n",
+    "links = driver.find_elements_by_tag_name('p')\n",
+    "count = 0\n",
+    "for link in links:\n",
+    "    att = {}\n",
+    "    try: \n",
+    "        title = link.find_element_by_class_name(\"song-title-link\").text\n",
+    "        artist = link.find_element_by_class_name(\"artist-link\").text\n",
+    "        lyric_link = link.find_element_by_class_name(\"song-title-link\").get_attribute('href')\n",
+    "        att['lyric'] = lyric_link\n",
+    "        att['title'] = title\n",
+    "        att['artist'] = artist\n",
+    "        count += 1\n",
+    "    except:\n",
+    "        pass\n",
+    "    if att != {}:\n",
+    "        out.append(att)\n",
+    "    if count > limit:\n",
+    "        break\n",
+    "driver.close()\n",
+    "\n",
+    "for item in out:\n",
+    "    item['lyric'] = get_lyric(item['lyric']) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# save in file\n",
+    "with open('lyrics.json', 'w') as f:\n",
+    "    json.dump(out, f)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[{'lyric': \"Grateful Dead - China Cat Sunflower\\nLook for a while at the china cat sunflower\\nProud walking jingle in the midnight sun\\nCopperdome bodhi drip a silver kimono\\nLike a crazy quilt star gown through a dream night wind\\n\\nNa na na, na na na\\nNa na na, na na na\\nOoh, oh, oh\\n\\nCrazy cat peekin' through a lace bandanna\\nLike a one-eyed cheshire, like a diamond-eye jack\\nA leaf of all colors plays a golden-string fiddle\\nTo a double-e waterfall over my back\\n\\nNa na na, na na na\\nNa na na, na na na\\nOoh, oh, oh\\n\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\n\\nComic book colors on a violin river cryin' leonardo\\nWords from out a silk trombone\\nI rang a silent bell, beneath a shower of pearls\\nIn the eagle-winged palace of the queen chinee\\n\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat\\n\\nWritten by:\\nJerry Garcia, Robert Hunter\\nPublisher:\\nLyrics © Universal Music Publishing Group, Warner Chappell Music, Inc.\\nLyrics powered by Lyric Find\",\n",
+       "  'title': 'China Cat Sunflower',\n",
+       "  'artist': 'Grateful Dead'},\n",
+       " {'lyric': \"Poison - Look What the Cat Dragged In\\nI went to bed too late\\nAnd got up too soon\\nMy poor head still spinnin'\\nFrom too much booze\\n\\nI got a foot in the gutter\\nA foot in the grave\\nI ain't seen home\\nIn the last three days\\n\\nOh my god look what the cat dragged in\\nLivin' my life sin after sin\\nNight rolls up and I do it again\\nOh my god, look what the cat dragged in\\n\\nNo tell, motel, hotel bed\\nIf it wasn't for the sunlight I'd swear I was dead\\n\\nI got a girl on the left of me\\nA girl on the right\\nI know damn well I slept with both last night\\n\\nOh my god look what the cat dragged in\\nLivin' my life sin after sin\\nNight rolls up and I do it again\\nOh my god, look what the cat dragged in (sin after sin)\\n\\nI'm late for work on Monday\\nAnd my boss is bitchin'\\nCan't get out of bed\\n'Cause my head's still spinnin'\\n\\nMy hair's in a rat's nest\\nI look like hell\\nHalf alive or half dead,\\nI just can't tell\\n\\nOh my god look what the cat dragged in\\nLivin' my life sin after sin\\nNight rolls up and I do it again\\nOh my god, look what the cat dragged in (cat dragged in)\\n\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\nCat dragged in, ow, in\\nLook what the cat dragged\\n\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\n\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\nCat dragged in (cat dragged in)\\n\\nWritten by:\\nBOBBY DALL, BRET MICHAELS, BRUCE ANTHONY JOHANNESSON, RIKKI ROCKET\\nPublisher:\\nLyrics © Universal Music Publishing Group\\nLyrics powered by Lyric Find\",\n",
+       "  'title': 'Look What the Cat Dragged In',\n",
+       "  'artist': 'Poison'},\n",
+       " {'lyric': \"Grateful Dead - China Cat Sunflower/I Know You Rider\\nLook for a while at the china cat sunflower\\nProud walking jingle in the midnight sun\\nCopperdome bodhi drip a silver kimono\\nLike a crazy quilt star gown through a dream night wind\\n\\nNa na na, na na na\\nNa na na, na na na\\nOoh, oh, oh\\n\\nCrazy cat peekin' through a lace bandanna\\nLike a one-eyed cheshire, like a diamond-eye jack\\nA leaf of all colors plays a golden-string fiddle\\nTo a double-e waterfall over my back\\n\\nNa na na, na na na\\nNa na na, na na na\\nOoh, oh, oh\\n\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\n\\nComic book colors on a violin river cryin' leonardo\\nWords from out a silk trombone\\nI rang a silent bell, beneath a shower of pearls\\nIn the eagle-winged palace of the queen chinee\\n\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat, china cat\\nChina cat\\n\\nWritten by:\\nJerry Garcia, Robert Hunter\\nPublisher:\\nLyrics © Universal Music Publishing Group, Warner Chappell Music, Inc.\\nLyrics powered by Lyric Find\",\n",
+       "  'title': 'China Cat Sunflower/I Know You Rider',\n",
+       "  'artist': 'Grateful Dead'},\n",
+       " {'lyric': \"DMX, Swizz Beatz and Drag-On - No Love For Me\\nKeep yo hands in the air, 'cause we gon' take it there\\nAnd I know it ain't fair, but we just don't care\\nUh-huh, uh, what\\n\\nAin't no other cats got love for me\\nAin't no cats gon' bust slugs for me\\nAin't no cats gon' shed blood for me\\nBut my dogs, is gon' be a thug for me\\n\\nAin't no other cats got love for me\\nAin't no cats gon' bust slugs for me\\nAin't no cats gon' shed blood for me\\nBut my dogs, is gon' be a thug for me\\n\\nUh, uh\\nIf I'm gonna rob, I'ma rob all night\\nIf I'm lookin' for somethin' it's probably a fight\\nIf I'm goin' fuck bitches then they better be tight\\nIf that's dead, then the head better be right\\nIf I gots to play I'ma play 'til I win\\nSince I gots to be here can't wait to begin\\nWanna fuck shorty can't stand shorty friend\\n'Cause honey friend fuck many many men\\nStay wit the rats 'cause the rats is real\\nWanna fuck, then we fuck, already know the deal\\nShit, fuck what you look like, just show the real\\nAnd I keep spot that we can go to chill\\nI love my, get down for the hoes\\nOnly reason I come around is for the hoes\\nPipework, I lay it down for the hoes\\nHit 'em off with that dark brown, you know?\\n\\nAin't no other cats got love for me\\nAin't no cats gon' bust slugs for me\\nAin't no cats gon' shed blood for me\\nBut my dogs, is gon' be a thug for me\\n\\nAin't no other cats got love for me\\nAin't no cats gon' bust slugs for me\\nAin't no cats gon' shed blood for me\\nBut my dogs, is gon' be a thug for me\\n\\nYou fuckin' wit' me, ain't keepin' your health right\\n'Cause me and my Rolls, we keep it jail tie\\nThe shit I pack is heavy, but the shells live\\nWhen they drop the same time, you drop without a fight\\nBurnin' anything that I'm puttin' my name on\\nYou might take a 'Drag', but you can't flame 'On'\\nI know y'all niggas don't know me, wit a chain on\\nWhen it come to the fire I'm the kid they blame it on\\nWhen you see like eight cars then y'all know who we are\\nNiggas spittin' mean bars off the green jar\\nNever drunk but you see me leaned at the bar\\nSpittin' fire that'll melt the ice on your arm\\nYou had that but for now dog give me that\\n'Cause dog you don't wanna see how my semi act\\nFake hustlin' niggas you'll pump any pack\\nWhen it come to this shit, I done laid plenty flat (C'mon)\\n\\nAin't no other cats got love for me\\nAin't no cats gon' bust slugs for me\\nAin't no cats gon' shed blood for me\\nBut my dogs, is gon' be a thug for me\\n\\nAin't no other cats got love for me\\nAin't no cats gon' bust slugs for me\\nAin't no cats gon' shed blood for me\\nBut my dogs, is gon' be a thug for me\\n\\nDo you hear what I tell you? Understand what you hear\\nDon't let nobody tell you, what to hope and to fear\\nDo you hear what I tell you? Understand what you hear\\nDon't let nobody tell you, what to hope and to fear\\n\\nUh, uh\\nWhat you niggas want? 'Cause I got it right here\\nY'all niggas front, then I hit you right there\\nNot really impressed by what niggas wear\\nFaggots talk shit but I really don't care\\nI'm the type of nigga that'll die for the cause\\nFuck what you heard, I will die for my dogs\\nAin't scared of shit, will ride in the fog\\nSame thing but a bigger size than yours\\nI fuck with Drag-On, 'cause he spits the flame\\nDrag-On motherfucker don't forget the name\\nAnd we all takin' over ain't shit the same\\nIf you ain't out that mob nigga quit the game\\nAnd ain't no other cats got love for me\\nAin't no other cats gon' bust slugs for me\\nAin't no other cats gon' shed blood for me\\nBut my dogs, is gon' be a thug wit me, c'mon\\n\\nAin't no other cats got love for me\\nAin't no cats gon' bust slugs for me\\nAin't no cats gon' shed blood for me\\nBut my dogs, is gon' be a thug for me\\n\\nAin't no other cats got love for me\\nAin't no cats gon' bust slugs for me\\nAin't no cats gon' shed blood for me\\nBut my dogs, is gon' be a thug for me\\n\\nDo you hear what I tell you? Understand what you hear\\nDon't let nobody tell you, what to hope and to fear\\nDo you hear what I tell you? Understand what you hear\\nDon't let nobody tell you, what to hope and to fear\\n\\nWritten by:\\nEARL SIMMONS, KASSEEM DEAN, MEL SMALLS\\nPublisher:\\nLyrics © Universal Music Publishing Group, Kobalt Music Publishing Ltd., Warner Chappell Music, Inc.\\nLyrics powered by Lyric Find\",\n",
+       "  'title': 'No Love For Me',\n",
+       "  'artist': 'DMX, Swizz Beatz and Drag-On'}]"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "out"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
