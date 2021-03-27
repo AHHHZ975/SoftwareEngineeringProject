@@ -1,0 +1,10 @@
+# parameters
+
+# sound paramters
+sound_url = 'https://freemp3cloud.com/'
+sound_search_text = "cat"
+
+# lyric parameters
+lyric_limit = 3
+lyric_url = "https://www.lyricfinder.org/search/lyrics/"
+lyric_search_text = "cat"
