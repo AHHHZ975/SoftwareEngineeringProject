@@ -1,0 +1,62 @@
+# scraping lyric
+
+from selenium import webdriver
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+from selenium.webdriver.common.action_chains import ActionChains
+import time
+from parameters import lyric_url, lyric_search_text, lyric_limit
+
+# downloading lyrics
+
+limit = lyric_limit # limitation count of scraping
+
+def get_lyric(href_link):
+    """
+    download lyric from a href link
+    
+    param: href_link: The input link
+    return: lyric: lyric text
+    """
+    driver1 = webdriver.Firefox(executable_path=r'./geckodriver.exe')
+    driver1.get(href_link)
+    lyric = driver1.find_element_by_class_name("col-lg-6").text
+    driver1.close()
+    return lyric
+
+search_text = lyric_search_text
+url = lyric_url + search_text
+driver = webdriver.Firefox(executable_path=r'./geckodriver.exe')
+driver.get(url)
+out = []
+links = driver.find_elements_by_tag_name('p')
+count = 0
+for link in links:
+    att = {}
+    try: 
+        title = link.find_element_by_class_name("song-title-link").text
+        artist = link.find_element_by_class_name("artist-link").text
+        lyric_link = link.find_element_by_class_name("song-title-link").get_attribute('href')
+        att['lyric'] = lyric_link
+        att['title'] = title
+        att['artist'] = artist
+        count += 1
+    except:
+        pass
+    if att != {}:
+        out.append(att)
+    if count > limit:
+        break
+driver.close()
+
+# download lyric from text link
+for item in out:
+    item['lyric'] = get_lyric(item['lyric']) 
+    
+    
+# save in file
+import json
+with open('lyrics.json', 'w') as f:
+    json.dump(out, f)
+    print("output saved in the lyrics.json file")
