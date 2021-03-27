@@ -1,0 +1,48 @@
+# sound scraping
+
+from selenium import webdriver
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+from selenium.webdriver.common.action_chains import ActionChains
+import time
+from parameters import sound_url, sound_search_text
+
+# downloading music 
+
+url = sound_url
+search_text = sound_search_text
+
+out = []
+driver = webdriver.Firefox(executable_path=r'./geckodriver.exe')
+driver.get(url)
+searchbox  = driver.find_element_by_id('searchSong') 
+searchbox.click()
+searchbox.send_keys(search_text)
+searchbox.send_keys(Keys.ENTER)
+time.sleep(2)
+
+
+links = driver.find_elements_by_class_name("pi-data")
+for link in links:
+    att = {}
+    artist = link.find_element_by_class_name("s-artist").text 
+    title = link.find_element_by_class_name("s-title").text
+    times = link.find_element_by_class_name("s-time").text
+    download_link = link.find_element_by_tag_name("a").get_attribute('href')
+    att['artist'] = artist
+    att['title'] = title
+    att['time'] = times
+    att['download_link'] = download_link
+    out.append(att)
+driver.close()
+
+
+# save in file
+import json
+with open('sounds.json', 'w') as f:
+    json.dump(out, f)
+    print("output saved in the sound.json file")
+    
+
+    
