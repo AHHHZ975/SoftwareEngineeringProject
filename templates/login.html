@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <meta charset="utf-8">
+  <title>Login to Music Cloud</title>
+{% endblock %}
+
+{% block body %}
+    <h1 id="Music_Cloud"><strong>Music Cloud</strong></h1>
+    <img src="../static/imgs/Logo.jpg" alt="Logo" width="200" height="100">
+    <figcaption>Infinity Music</figcaption>
+  
+    {% if 'username' in session %}
+        <p>Welcome back {{session['username']}}!</p>
+        <form action="{{url_for('login')}}" method="post">
+            <input type="submit" name="logout" value="logout" />
+        </form>
+    {% else %}
+        <p>A login is required:</p>
+        <form style="text-align: center;" action="{{url_for('login')}}" method="post">
+            <p>Username<br />
+            <input id="text_box" type="text" name="username" /></p>
+            <br/>
+            <p>Password<br />
+            <input id="text_box" type="password" name="passwd" /></p>
+            <br/>
+            <p><input id= "submit_but" type="submit" value="submit" /></p>
+        </form>
+    {% endif %}
+    {% with messages = get_flashed_messages() %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {% endwith %}
+{% endblock %}
