@@ -1,4 +1,4 @@
-import flask
+import flask, flask.views
 import settings
 
 # import views
