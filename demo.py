@@ -7,26 +7,33 @@ app.secret_key = "AHZ"
 
 users = {'AHZ':'123'}
 
+
 class Main(flask.views.MethodView):
     def get(self):
-        return flask.render_template('index.html')
+        return flask.render_template("index.html")
+    def post(self):
+        pass
+
+class Login(flask.views.MethodView):
+    def get(self):
+        return flask.render_template('login.html')
     
     def post(self):
         if 'logout' in flask.request.form:
             flask.session.pop('username', None)
-            return flask.redirect(flask.url_for('index'))
+            return flask.redirect(flask.url_for('login'))
         required = ['username', 'passwd']
         for r in required:
             if r not in flask.request.form:
                 flask.flash("Error: {0} is required.".format(r))
-                return flask.redirect(flask.url_for('index'))
+                return flask.redirect(flask.url_for('login'))
         username = flask.request.form['username']
         passwd = flask.request.form['passwd']
         if username in users and users[username] == passwd:
             flask.session['username'] = username
         else:
             flask.flash("Username doesn't exist or incorrect password")
-        return flask.redirect(flask.url_for('index'))
+        return flask.redirect(flask.url_for('login'))
 
 def login_required(method):
     @functools.wraps(method)
@@ -35,7 +42,7 @@ def login_required(method):
             return method(*args, **kwargs)
         else:
             flask.flash("A login is required to see the page!")
-            return flask.redirect(flask.url_for('index'))
+            return flask.redirect(flask.url_for('login'))
     return wrapper
 
 class Remote(flask.views.MethodView):
@@ -54,9 +61,13 @@ class Music(flask.views.MethodView):
     def get(self):
         songs = os.listdir('C:/Users/AmirHossein/OneDrive/Desktop/flask-tutorial-master/flask-tutorial-master/part 4 - music/static/music')
         return flask.render_template("music.html", songs=songs)
-    
+
 app.add_url_rule('/',
                  view_func=Main.as_view('index'),
+                 methods=["GET", "POST"])
+    
+app.add_url_rule('/login',
+                 view_func=Login.as_view('login'),
                  methods=["GET", "POST"])
 app.add_url_rule('/remote/',
                  view_func=Remote.as_view('remote'),
