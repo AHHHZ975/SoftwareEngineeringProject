@@ -1,8 +1,9 @@
-import flask
-
+import flask, flask.views
+import os
 class Main(flask.views.MethodView):
     def get(self):
-        return flask.render_template("index.html")
+        return flask.render_template('index.html')
+
     def post(self):
         pass
 

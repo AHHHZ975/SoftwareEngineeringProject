@@ -22,6 +22,9 @@
             Navigation:<br />
             <ul>
                 {% block nav %}{% endblock %}
+                <li><a href="{{url_for('main')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
                 {% if 'username' in session %}
                 <li><a href="{{url_for('remote')}}">remote control</a></li>
                 <li><a href="{{url_for('music')}}">music</a></li>
