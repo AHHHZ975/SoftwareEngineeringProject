@@ -115,16 +115,6 @@
             <li><a href="javascript:void(0);">{{song}}</a></li>
         {% endfor %}
         </ul>
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                Results:
-                <pre>
-                    {% for message in messages %}
-    {{ message }}
-                    {% endfor %}
-                </pre>
-            {% endif %}
-        {% endwith %}
 
     
                 

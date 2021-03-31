@@ -2,6 +2,7 @@
 <html>
     <head>
         {% block header %}{% endblock %}
+        <!-- <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" /> -->
         <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
         <script type="text/javascript" src="../static/js/jquery-1.7.1.min.js"></script>
     </head>
@@ -21,9 +22,21 @@
             Navigation:<br />
             <ul>
                 {% block nav %}{% endblock %}
-                <li><a href="{{url_for('login')}}">Login</a></li>
-                <li><a href="{{url_for('music')}}">Music Player</a></li>
+                {% if 'username' in session %}
+                <li><a href="{{url_for('remote')}}">remote control</a></li>
+                <li><a href="{{url_for('music')}}">music</a></li>
+                <li><a href="{{url_for('login')}}">logout</a>
+                {% else %}
+                <li><a href="{{url_for('login')}}">login</a>
+                {% endif %}
             </ul>
+        </div>
+        <div id="flashed">
+            {% with messages = get_flashed_messages() %}
+            {% for message in messages %}
+                {{message}}
+            {% endfor %}
+            {% endwith %}
         </div>
     </body>
 </html>

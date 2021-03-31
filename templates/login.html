@@ -27,9 +27,4 @@
             <p><input id= "submit_but" type="submit" value="submit" /></p>
         </form>
     {% endif %}
-    {% with messages = get_flashed_messages() %}
-        {% for message in messages %}
-            {{message}}
-        {% endfor %}
-    {% endwith %}
 {% endblock %}
