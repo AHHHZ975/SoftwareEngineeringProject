@@ -1,1 +1,1 @@
-secret_key = "AHZ"
+secret_key = "Arian"
