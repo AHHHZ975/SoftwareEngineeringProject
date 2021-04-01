@@ -1,65 +1,44 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<link rel="stylesheet" href="../static/css/style.css">
 
-<head>
+{% extends "base.html" %}
+
+{% block header %}
   <meta charset="utf-8">
-  <title>Sign up for Music Cloud</title>
-</head>
-
-<style>
-body {
-  background-image: url("../static/imgs/frame3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-</style>
+  <title>Sign Up</title>
+{% endblock %}
+{% block body %}
   <h1 id="Music_Cloud"><strong>Music Cloud</strong></h1>
 
   <img src="../static/imgs/Logo.jpg" alt="Logo" width="200" height="100">
   <figcaption>Infinity Music</figcaption>
 
-  <h3>Sign-up</h3>
-  <br>
-  <div style="text-align: center;">
-    <label> Email </label>
-    <br>
-    <input id="text_box" type="email" name="" value="">
-  </div>
-
-<br>
-
-  <div style="text-align: center;">
-    <label>Mobile Number</label>
-    <br>
-    <input id="text_box" type="number" name="" value="">
-  </div>
-
-  <br>
-
-  <div style="text-align: center;">
-    <label>Password</label>
-    <br>
-    <input id="text_box" type="password" name="" value="">
-  </div>
-
-<br>
-
-  <div style="text-align: center;">
-    <label>Password Confirmation</label>
-    <br>
-    <input id="text_box" type="password" name="" value="">
-  </div>
+  {% if 'username' in session %}
+        <p>You are already logged in as {{session['username']}}!</p>
+        <form action="{{url_for('login')}}" method="post">
+            <input type="submit" name="logout" value="logout" />
+        </form>
+  {% else %}        
+        <form style="text-align: center;" action="{{url_for('signup')}}" method="post">
+            <p>Email<br />  
+            <input id="text_box" type="email" name="email"></p>
+            <br />
+            <p>Mobile Number<br />  
+            <input id="text_box" type="number" name="phoneNumber"></p>
+            <br />
+            <p>Username<br />
+            <input id="text_box" type="text" name="username" /></p>
+            <br/>
+            <p>Password<br />
+            <input id="text_box" type="password" name="password" /></p>
+            <br/>
+            <p>Password Confirmation<br />
+            <input id="text_box" type="password" name="passwordConfirm" /></p>
+            <br/>
+            <p><input id= "create_but" type="submit" value="submit" /></p>
+        </form>
+    {% endif %}
+{% endblock %}
 
 
 
-  <br>
-  <div style="text-align: center">
-    <input id= "create_but" type="submit" name="" value="Create">
-    <br>
-  </div>
-  <br>
-</body>
 
-</html>
+    
