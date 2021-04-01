@@ -1,6 +1,6 @@
 import flask, flask.views
-import settings
-from flask_pymongo import PyMongo
+from flask import app
+
 
 # import views
 from signup import Signup
@@ -10,13 +10,7 @@ from music import Music
 from main import Main
 from contact import Contact
 from about import About
-
-app = flask.Flask(__name__)
-app.secret_key = settings.secret_key
-app.config['MONGO_DBNAME'] = 'mongologinexample'
-app.config['MONGO_URI'] = 'mongodb+srv://ahz:123@cluster0.gu31r.mongodb.net/MusicCloud?retryWrites=true&w=majority'
-
-mongo = PyMongo(app)
+from db import app
 
 # Directories
 app.add_url_rule('/',
