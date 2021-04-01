@@ -21,12 +21,12 @@ body {
   <figcaption>Infinity Music</figcaption>
 
   <div style="text-align: center">
-    <a href="login"><input id= "create_but" type="submit" name="" value="Login"></a>
+    <a href="{{url_for('login')}}"><input id= "create_but" type="submit" name="login_button" value="Login"></a>
     <br>
   </div>
   <br>
   <div style="text-align: center">
-    <a href="login"><input id= "create_but" type="submit" name="" value="SignUp"></a>
+    <a href="{{url_for('signup')}}"><input id= "create_but" type="submit" name="signup_button" value="SignUp"></a>
     <br>
   </div>
 </body>
