@@ -59,7 +59,7 @@ class Search(flask.views.MethodView):
     @login_required
     def getMusicInformation(self, searchText):
         # lyric parameters
-        lyric_limit = 3
+        lyric_limit = 1
         lyric_url = "https://www.lyricfinder.org/search/lyrics/"
             
         url = lyric_url + searchText

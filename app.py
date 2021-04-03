@@ -39,7 +39,7 @@ app.add_url_rule('/search/',
                  
 app.add_url_rule('/music/',
                  view_func=Music.as_view('music'),
-                 methods=['GET'])
+                 methods=['GET', 'POST'])
 
 
 @app.errorhandler(404)
