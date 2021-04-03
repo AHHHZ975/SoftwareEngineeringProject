@@ -1,7 +1,6 @@
 import flask
-
-
-users = {'AHZ':'123'}
+from db import mongo
+import bcrypt
 
 class Login(flask.views.MethodView):
     def get(self):
@@ -11,15 +10,30 @@ class Login(flask.views.MethodView):
         if 'logout' in flask.request.form:
             flask.session.pop('username', None)
             return flask.redirect(flask.url_for('login'))
-        required = ['username', 'passwd']
+        required = ['username', 'password']
         for r in required:
             if r not in flask.request.form:
                 flask.flash("Error: {0} is required.".format(r))
                 return flask.redirect(flask.url_for('login'))
+        
         username = flask.request.form['username']
-        passwd = flask.request.form['passwd']
-        if username in users and users[username] == passwd:
-            flask.session['username'] = username
-        else:
-            flask.flash("Username doesn't exist or incorrect password")
-        return flask.redirect(flask.url_for('login'))
+        password = flask.request.form['password']
+        
+        
+        if (username is None):
+                flask.flash("This username field is empty!")
+                return flask.redirect(flask.url_for('login'))
+        else:       
+            users = mongo.db.users
+            logInUser = users.find_one({'username' : flask.request.form['username']})
+
+            if logInUser:                
+                if bcrypt.hashpw(flask.request.form['password'].encode('utf-8'), logInUser['password'].encode('utf-8')) == logInUser['password'].encode('utf-8').decode():
+                    flask.session['username'] = flask.request.form['username']                    
+                    return flask.redirect(flask.url_for('login'))
+                else:
+                     flask.flash("The password is not correct!")
+                     return flask.redirect(flask.url_for('login'))
+            else:
+                flask.flash("This username doesn't exists in the database!")
+                return flask.redirect(flask.url_for('login'))

@@ -5,7 +5,7 @@ from flask import app
 # import views
 from signup import Signup
 from login import Login
-from remote import Remote
+from search import Search
 from music import Music
 from main import Main
 from contact import Contact
@@ -33,8 +33,8 @@ app.add_url_rule('/signup',
                  view_func=Signup.as_view('signup'),
                  methods=["GET", "POST"])
 
-app.add_url_rule('/remote/',
-                 view_func=Remote.as_view('remote'),
+app.add_url_rule('/search/',
+                 view_func=Search.as_view('search'),
                  methods=['GET', 'POST'])
                  
 app.add_url_rule('/music/',

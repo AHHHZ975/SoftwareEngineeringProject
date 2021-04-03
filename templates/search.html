@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+    <h2 style="text-align: center;">Search for a music</h2>
+    <form action="{{url_for('search')}}" style="text-align: center;" method="post">
+        <input type="text" name="expression" />
+        <input type="submit" value="Search" />
+    </form>
+{% endblock %}
+{% block nav %}
+<li><a href="{{url_for('main')}}">back</a></li>
+{% endblock %}
