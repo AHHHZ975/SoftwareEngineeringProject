@@ -22,38 +22,46 @@ class Search(flask.views.MethodView):
     
     @login_required
     def getMusic(self, searchText):
-        # downloading music 
+        # downloading music
+        songLimit = 1 
         url = 'https://freemp3cloud.com/'
-        search_text = searchText
 
         out = []
         driver = webdriver.Firefox(executable_path=r'./geckodriver.exe')
         driver.get(url)
         searchbox  = driver.find_element_by_id('searchSong') 
         searchbox.click()
-        searchbox.send_keys(search_text)
+        searchbox.send_keys(searchText)
         searchbox.send_keys(Keys.ENTER)
         time.sleep(2)
 
         links = driver.find_elements_by_class_name("pi-data")
+        count = 0
         for link in links:
-            att = {}
-            artist = link.find_element_by_class_name("s-artist").text 
-            title = link.find_element_by_class_name("s-title").text
-            times = link.find_element_by_class_name("s-time").text
-            download_link = link.find_element_by_tag_name("a").get_attribute('href')
-            att['artist'] = artist
-            att['title'] = title
-            att['time'] = times
-            att['download_link'] = download_link
-            out.append(att)
+            try:
+                att = {}
+                artist = link.find_element_by_class_name("s-artist").text 
+                title = link.find_element_by_class_name("s-title").text
+                times = link.find_element_by_class_name("s-time").text
+                download_link = link.find_element_by_tag_name("a").get_attribute('href')
+                att['artist'] = artist
+                att['title'] = title
+                att['time'] = times
+                att['download_link'] = download_link
+                count += 1                
+            except:
+                pass
+            if att != {}:
+                out.append(att)
+            if count >= songLimit:
+                break
         driver.close()
 
 
         # save in file
         import json
         with open('db/sounds.json', 'w') as f:
-            json.dump(out, f)
+            json.dump(out, f, indent=4)
             print("output saved in the sound.json file")
 
     @login_required
@@ -82,7 +90,7 @@ class Search(flask.views.MethodView):
                 pass
             if att != {}:
                 out.append(att)
-            if count > lyric_limit:
+            if count >= lyric_limit:
                 break
         driver.close()
 
@@ -97,5 +105,5 @@ class Search(flask.views.MethodView):
         # save in file
         import json
         with open('db/lyrics.json', 'w') as f:
-            json.dump(out, f)
+            json.dump(out, f, indent=4)
             print("output saved in the lyrics.json file")
