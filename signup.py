@@ -23,8 +23,8 @@ class Signup(flask.views.MethodView):
                 return flask.redirect(flask.url_for('signup'))
         else:       
             users = mongo.db.users
-            existingUsers = users.find_one({'name' : flask.request.form['username']})
-
+            existingUsers = users.find_one({'username' : flask.request.form['username']})
+        
             if existingUsers is None:
                 if (passwordConfirm == password):
                     hashpass = bcrypt.hashpw(flask.request.form['password'].encode('utf-8'), bcrypt.gensalt())
@@ -38,5 +38,3 @@ class Signup(flask.views.MethodView):
             else:
                 flask.flash("This username already exists in the system!")
                 return flask.redirect(flask.url_for('signup'))
-        
-        
