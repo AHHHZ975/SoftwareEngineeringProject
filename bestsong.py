@@ -1,15 +1,20 @@
 from db import mongo
 
-songs = mongo.db.musics
-
-view = []
-title = []
-
-for song in songs:
-    title.append(song['title'])
-    view.append(song['view'])
-
-# for j in range(len(title)):
-#     weight.append((float(likes[j]) / float(max(likes)) * 5) + float(rates[j]))
-
-print(sorted(zip(view, title), reverse=True)[:1])
+class BestSong():
+    def getBetsSongTitle():    
+        bestViews = []
+        bestTitles = []
+        musics = mongo.db.musics.find({})
+        for music in musics:
+            bestTitles.append(music['title'])
+            bestViews.append(music['view'])
+        
+        # for j in range(len(title)):
+        #     weight.append((float(likes[j]) / float(max(likes)) * 5) + float(rates[j]))
+        # print(sorted(zip(bestViews, bestTitles), reverse=True)[:2])
+        bests = sorted(zip(bestViews, bestTitles), reverse=True) 
+        sortedBestTitles = []
+        for best in bests:
+            sortedBestTitles.append(best[1])
+        return sortedBestTitles
+        

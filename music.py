@@ -1,6 +1,6 @@
 import flask
 from utils import login_required
-import os
+from bestsong import BestSong
 from search import Search
 import json
 from db import mongo
@@ -9,18 +9,8 @@ class Music(flask.views.MethodView):
     @login_required
     def get(self):     
         # Suggest best songs
-        bestViews = []
-        bestTitles = []
-        musics = mongo.db.musics.find({})
-        for music in musics:
-            bestTitles.append(music['title'])
-            bestViews.append(music['view'])
+        bestTitles = BestSong.getBetsSongTitle()
 
-        # for j in range(len(title)):
-        #     weight.append((float(likes[j]) / float(max(likes)) * 5) + float(rates[j]))
-
-        print(sorted(zip(bestViews, bestTitles), reverse=True)[:2])
-            
         # songs = os.listdir('./static/music')
         # Display the user's search history
         users = mongo.db.users
@@ -32,7 +22,11 @@ class Music(flask.views.MethodView):
         return flask.render_template("music.html", songs=songs, bestSongs=bestTitles)
     
     @login_required
-    def post(self):            
+    def post(self): 
+        # Suggest best songs
+        bestTitles = BestSong.getBetsSongTitle()
+
+
         searchText = flask.request.form['search']
         Search.getMusic(Search, searchText)
         Search.getMusicInformation(Search, searchText)
@@ -98,7 +92,7 @@ class Music(flask.views.MethodView):
             songs = []
             for searchHistory in currentUser['searchHistory']:
                 songs.append(searchHistory['title'])
-            return flask.render_template("music.html", lyric=lyric, artist=artist, title=title, time=time, downloadLink=downloadLink, songs=songs)
+            return flask.render_template("music.html", lyric=lyric, artist=artist, title=title, time=time, downloadLink=downloadLink, songs=songs, bestSongs=bestTitles)
         else:
             flask.flash('Sorry, the music not found!')          
             return flask.redirect(flask.url_for('music'))

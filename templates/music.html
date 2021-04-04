@@ -132,8 +132,10 @@
             </button>
         </form>
 
+        <br>
+
         <!-- Search history -->
-        <ul style="text-align: left;">
+        <ul style="text-align: center; display: inline-block; float: right;">
             <h2> Your search history:</h2>
             {% for song in songs %}
                 <li><a href="javascript:void(0);">{{song}}</a></li>
@@ -141,7 +143,7 @@
         </ul>
 
         <!-- Best song -->
-        <ul style="text-align: right;">
+        <ul style="text-align: center; display: inline-block; float: left;">
             <h2> Suggested Best Songs:</h2>
             {% for bestSong in bestSongs %}
                 <li><a href="javascript:void(0);">{{bestSong}}</a></li>
@@ -149,7 +151,7 @@
         </ul>
 
         <!-- Music information -->
-        <ul style="text-align: center;">
+        <ul style="text-align: center; display: inline-block;">
             <li><h4>Artist:</h4> {{artist}}</li>
             <br>
             <li><h4>Title:</h4>  {{title}}</li>
@@ -160,7 +162,7 @@
             <br>
             <h4>Download Link:</h4><li><a href={{downloadLink}}>{{downloadLink}}</a></li>
         </ul>
-             
+
     </div>
 
     <!-- <script type='text/javascript'>
