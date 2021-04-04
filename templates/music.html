@@ -113,7 +113,9 @@
     <div style="text-align: center">
         <h2>Music</h2>
         
-        <audio controls="controls" autoplay="autoplay"></audio>
+        <audio controls="controls" autoplay="autoplay">
+            <source src="{{downloadLink}}">
+        </audio>
         
         <a href="#" class="like-button">
             <?xml version="1.0" encoding="utf-8"?>
@@ -124,14 +126,20 @@
         </a>
 
         <ul>
-        {% for song in songs %}
+        <!-- {% for song in songs %}
             <li><a href="javascript:void(0);">{{song}}</a></li>
         {% endfor %}
+         -->
+        <br>
 
         <li><h4>Artist:</h4> {{artist}}</li>
+        <br>
         <li><h4>Title:</h4>  {{title}}</li>
+        <br>
         <li><h4>Lyric:</h4>  {{lyric}}</li>
+        <br>
         <li><h4>Time:</h4> {{time}}</li>
+        <br>
         <li><a href={{downloadLink}}>Download Link: {{downloadLink}}</a></li>
         </ul>
 
@@ -140,13 +148,13 @@
         
     </div>
 
-    <script type='text/javascript'>
+    <!-- <script type='text/javascript'>
         {% for song in songs %} 
             $('li').click(function(){
                 var str = $(this).text()
                 $('audio').attr('src', '/static/music/'+str);
             });
-        {% endfor %}
+        {% endfor %} -->
     </script>
 {% endblock %}
 {% block nav %}
