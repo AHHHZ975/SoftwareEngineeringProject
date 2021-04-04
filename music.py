@@ -19,10 +19,7 @@ class Music(flask.views.MethodView):
         return flask.render_template("music.html", songs=songs)
     
     @login_required
-    def post(self):
-        if 'like' in flask.request.form:
-            # flask.session.pop('username', None)
-            return flask.redirect(flask.url_for('music'))
+    def post(self):   
         searchText = flask.request.form['search']
         Search.getMusic(Search, searchText)
         Search.getMusicInformation(Search, searchText)
@@ -55,17 +52,28 @@ class Music(flask.views.MethodView):
         # open(f'./static/music/{title}.mp3', 'wb').write(r.content)
         
         # songs = os.listdir('./static/music')
-        if artist and title and time and downloadLink and lyric:
+        if artist and title and time and downloadLink and lyric:                
+
             # update user database with his/her search history
             users = mongo.db.users
+            musics = mongo.db.musics
             searchedMusic = {   "title": title,
                                 "artist": artist,
                                 "downloadLink": downloadLink,
                                 "time": time,
-                                "lyric": lyric 
-                            }
+                                "lyric": lyric
+                            }                        
             users.update({'username': flask.session['username']}, {'$push': {'searchHistory': searchedMusic}})
-            
+                        
+
+            # view of the music                
+            existingMusics = musics.find_one({'title' : title})                
+            if existingMusics is None:
+                musics.insert({'title' : title, 'artist' : artist, 'downloadLink' : downloadLink, 'time': time, 'view': 1})
+            else:
+                view = existingMusics['view']
+                musics.update_one({'title': title}, {'$set': {'view': view + 1}}, upsert=False)
+
 
             currentUser = users.find_one({'username' :  flask.session['username']})            
             # for searchHisrory in currentUser['searchHistory']:
