@@ -20,6 +20,9 @@ class Music(flask.views.MethodView):
     
     @login_required
     def post(self):
+        if 'like' in flask.request.form:
+            # flask.session.pop('username', None)
+            return flask.redirect(flask.url_for('music'))
         searchText = flask.request.form['search']
         Search.getMusic(Search, searchText)
         Search.getMusicInformation(Search, searchText)
