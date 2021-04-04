@@ -9,15 +9,15 @@
     <h1 id="Music_Cloud"><strong>Music Cloud</strong></h1>
     <img src="../static/imgs/Logo.jpg" alt="Logo" width="200" height="100">
     <figcaption>Infinity Music</figcaption>
+    <br>
   
     {% if 'username' in session %}
         <p>Welcome back {{session['username']}}!</p>
         <form action="{{url_for('login')}}" method="post">
             <input type="submit" name="logout" value="logout" />
         </form>
-    {% else %}
-        <p>A login is required:</p>
-        <form style="text-align: center;" action="{{url_for('login')}}" method="post">
+    {% else %}        
+        <form  action="{{url_for('login')}}" method="post">
             <p>Username<br />
             <input id="text_box" type="text" name="username" /></p>
             <br/>

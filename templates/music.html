@@ -16,7 +16,7 @@
 
     .topnav {
     overflow: hidden;
-    background-color: #e9b0df;
+    /* background-color: #e9b0df; */
     }
 
     .topnav a {
@@ -111,6 +111,8 @@
     </div>
      -->
     <div style="text-align: center">
+        <br>
+        <br>
         <h2>Music</h2>
         
         <audio controls="controls" autoplay="autoplay">
@@ -141,7 +143,7 @@
         <br>
         <li><h4>Time:</h4> {{time}}</li>
         <br>
-        <li><a href={{downloadLink}}>Download Link: {{downloadLink}}</a></li>
+        <h4>Download Link:</h4><li><a href={{downloadLink}}>{{downloadLink}}</a></li>
         </ul>
 
     
@@ -159,5 +161,4 @@
     </script>
 {% endblock %}
 {% block nav %}
-<li><a href="{{url_for('main')}}">back</a></li>
 {% endblock %}
