@@ -7,7 +7,20 @@ from db import mongo
 
 class Music(flask.views.MethodView):
     @login_required
-    def get(self):        
+    def get(self):     
+        # Suggest best songs
+        bestViews = []
+        bestTitles = []
+        musics = mongo.db.musics.find({})
+        for music in musics:
+            bestTitles.append(music['title'])
+            bestViews.append(music['view'])
+
+        # for j in range(len(title)):
+        #     weight.append((float(likes[j]) / float(max(likes)) * 5) + float(rates[j]))
+
+        print(sorted(zip(bestViews, bestTitles), reverse=True)[:2])
+            
         # songs = os.listdir('./static/music')
         # Display the user's search history
         users = mongo.db.users
@@ -16,10 +29,10 @@ class Music(flask.views.MethodView):
         for searchHistory in currentUser['searchHistory']:
             songs.append(searchHistory['title'])
 
-        return flask.render_template("music.html", songs=songs)
+        return flask.render_template("music.html", songs=songs, bestSongs=bestTitles)
     
     @login_required
-    def post(self):   
+    def post(self):            
         searchText = flask.request.form['search']
         Search.getMusic(Search, searchText)
         Search.getMusicInformation(Search, searchText)
@@ -74,10 +87,14 @@ class Music(flask.views.MethodView):
                 view = existingMusics['view']
                 musics.update_one({'title': title}, {'$set': {'view': view + 1}}, upsert=False)
 
-
+            
             currentUser = users.find_one({'username' :  flask.session['username']})            
             # for searchHisrory in currentUser['searchHistory']:
-            #     if searchHistory['title']            
+            #     if searchHistory['title']
+                        
+
+
+            # Search history of the current user             
             songs = []
             for searchHistory in currentUser['searchHistory']:
                 songs.append(searchHistory['title'])

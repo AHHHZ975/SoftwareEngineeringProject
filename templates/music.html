@@ -115,11 +115,12 @@
         <br>
         <h2>Music</h2>
         
+        <!-- Music player -->
         <audio controls="controls" autoplay="autoplay">
             <source src="{{downloadLink}}">
         </audio>
         
-
+        <!-- Like button -->
         <form action="{{url_for('music')}}" method="post">            
             <button type="submit" name="like" value="like">
                 <a class="like-button">
@@ -131,7 +132,7 @@
             </button>
         </form>
 
-
+        <!-- Search history -->
         <ul style="text-align: left;">
             <h2> Your search history:</h2>
             {% for song in songs %}
@@ -139,21 +140,27 @@
             {% endfor %}
         </ul>
 
-        <ul style="text-align: center;">
-        <li><h4>Artist:</h4> {{artist}}</li>
-        <br>
-        <li><h4>Title:</h4>  {{title}}</li>
-        <br>
-        <li><h4>Lyric:</h4>  {{lyric}}</li>
-        <br>
-        <li><h4>Time:</h4> {{time}}</li>
-        <br>
-        <h4>Download Link:</h4><li><a href={{downloadLink}}>{{downloadLink}}</a></li>
+        <!-- Best song -->
+        <ul style="text-align: right;">
+            <h2> Suggested Best Songs:</h2>
+            {% for bestSong in bestSongs %}
+                <li><a href="javascript:void(0);">{{bestSong}}</a></li>
+            {% endfor %}
         </ul>
 
-    
-                
-        
+        <!-- Music information -->
+        <ul style="text-align: center;">
+            <li><h4>Artist:</h4> {{artist}}</li>
+            <br>
+            <li><h4>Title:</h4>  {{title}}</li>
+            <br>
+            <li><h4>Lyric:</h4>  {{lyric}}</li>
+            <br>
+            <li><h4>Time:</h4> {{time}}</li>
+            <br>
+            <h4>Download Link:</h4><li><a href={{downloadLink}}>{{downloadLink}}</a></li>
+        </ul>
+             
     </div>
 
     <!-- <script type='text/javascript'>
