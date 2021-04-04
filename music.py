@@ -3,13 +3,20 @@ from utils import login_required
 import os
 from search import Search
 import json
-import requests
+from db import mongo
 
 class Music(flask.views.MethodView):
     @login_required
     def get(self):        
-        songs = os.listdir('./static/music')        
-        return flask.render_template("music.html")
+        # songs = os.listdir('./static/music')
+        # Display the user's search history
+        users = mongo.db.users
+        currentUser = users.find_one({'username' :  flask.session['username']})
+        songs = []
+        for searchHistory in currentUser['searchHistory']:
+            songs.append(searchHistory['title'])
+
+        return flask.render_template("music.html", songs=songs)
     
     @login_required
     def post(self):
@@ -46,7 +53,24 @@ class Music(flask.views.MethodView):
         
         # songs = os.listdir('./static/music')
         if artist and title and time and downloadLink and lyric:
-            return flask.render_template("music.html", lyric=lyric, artist=artist, title=title, time=time, downloadLink=downloadLink)
+            # update user database with his/her search history
+            users = mongo.db.users
+            searchedMusic = {   "title": title,
+                                "artist": artist,
+                                "downloadLink": downloadLink,
+                                "time": time,
+                                "lyric": lyric 
+                            }
+            users.update({'username': flask.session['username']}, {'$push': {'searchHistory': searchedMusic}})
+            
+
+            currentUser = users.find_one({'username' :  flask.session['username']})            
+            # for searchHisrory in currentUser['searchHistory']:
+            #     if searchHistory['title']            
+            songs = []
+            for searchHistory in currentUser['searchHistory']:
+                songs.append(searchHistory['title'])
+            return flask.render_template("music.html", lyric=lyric, artist=artist, title=title, time=time, downloadLink=downloadLink, songs=songs)
         else:
             flask.flash('Sorry, the music not found!')          
             return flask.redirect(flask.url_for('music'))

@@ -16,6 +16,8 @@ class Signup(flask.views.MethodView):
         
         username = flask.request.form['username']
         password = flask.request.form['password']
+        phoneNumber = flask.request.form['phoneNumber']
+        email = flask.request.form['email']
         passwordConfirm = flask.request.form['passwordConfirm']
 
         if (username is None):
@@ -23,13 +25,13 @@ class Signup(flask.views.MethodView):
                 return flask.redirect(flask.url_for('signup'))
         else:       
             users = mongo.db.users
-            existingUsers = users.find_one({'username' : flask.request.form['username']})
+            existingUsers = users.find_one({'username' : username})
         
             if existingUsers is None:
                 if (passwordConfirm == password):
-                    hashpass = bcrypt.hashpw(flask.request.form['password'].encode('utf-8'), bcrypt.gensalt())
-                    users.insert({'username' : flask.request.form['username'], 'password' : hashpass})
-                    flask.session['username'] = flask.request.form['username']
+                    hashpass = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+                    users.insert({'username' : username, 'password' : hashpass, 'email' : email, 'phoneNumer': phoneNumber, 'searchHistory': []})
+                    flask.session['username'] = username
                     flask.flash("The new account has been created successfully!")
                     return flask.redirect(flask.url_for('login'))
                 else:

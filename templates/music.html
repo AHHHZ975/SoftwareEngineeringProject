@@ -125,13 +125,14 @@
             </svg>
         </a>
 
-        <ul>
-        <!-- {% for song in songs %}
-            <li><a href="javascript:void(0);">{{song}}</a></li>
-        {% endfor %}
-         -->
-        <br>
+        <ul style="text-align: left;">
+            <h2> Your search history:</h2>
+            {% for song in songs %}
+                <li><a href="javascript:void(0);">{{song}}</a></li>
+            {% endfor %}
+        </ul>
 
+        <ul style="text-align: center;">
         <li><h4>Artist:</h4> {{artist}}</li>
         <br>
         <li><h4>Title:</h4>  {{title}}</li>
