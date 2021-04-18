@@ -56,7 +56,7 @@ class Playlist(flask.views.MethodView):
         # songs = os.listdir('./static/music')
         if True: #artist and title and time and downloadLink and lyric:                
 
-            # update user database with his/her search history
+            # update user's playlist with his/her search history
             users = mongo.db.users
             musics = mongo.db.musics
             searchedMusic = {   "title": title,
@@ -64,8 +64,8 @@ class Playlist(flask.views.MethodView):
                                 "downloadLink": downloadLink,
                                 "time": time,
                                 "lyric": lyric
-                            }                        
-            users.update({'username': flask.session['username']}, {'$push': {'searchHistory': searchedMusic}})
+                            }
+            users.update({'username': flask.session['username']}, {'$push': {'playlist': searchedMusic}})
                         
 
             # view of the music                
@@ -83,9 +83,9 @@ class Playlist(flask.views.MethodView):
                         
 
 
-            # Search history of the current user             
+            # Playlist of the current user
             songs = []
-            for searchHistory in currentUser['searchHistory']:
+            for searchHistory in currentUser['playlist']:
                 songs.append(searchHistory['title'])
             return flask.render_template("playlist.html", lyric=lyric, artist=artist, title=title, time=time, downloadLink=downloadLink, songs=songs, bestSongs=bestTitles)
         else:

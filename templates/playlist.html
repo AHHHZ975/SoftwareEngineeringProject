@@ -121,16 +121,16 @@
 
         <br>
 
-        <!-- Search history -->
-        <ul style="text-align: center; display: inline-block; float: right;">
-            <h2> Your search history:</h2>
+        <!-- Playlist -->
+        <ul style="text-align: center; float: right;">
+            <h2> Your Playlist:</h2>
             {% for song in songs %}
                 <li><a href="javascript:void(0);">{{song}}</a></li>
             {% endfor %}
         </ul>
 
         <!-- Music information -->
-        <ul style="text-align: center; display: inline-block;">
+        <ul style="text-align: center; float: left;">
             <li><h4>Artist:</h4> {{artist}}</li>
             <br>
             <li><h4>Title:</h4>  {{title}}</li>
