@@ -1,4 +1,5 @@
 import flask
+from flask.helpers import flash
 from utils import login_required
 from bestsong import BestSong
 from search import Search
@@ -7,7 +8,7 @@ from db import mongo
 
 class Music(flask.views.MethodView):
     @login_required
-    def get(self):     
+    def get(self):
         # Suggest best songs
         bestTitles = BestSong.getBetsSongTitle()
 
@@ -22,7 +23,11 @@ class Music(flask.views.MethodView):
         return flask.render_template("music.html", songs=songs, bestSongs=bestTitles)
     
     @login_required
-    def post(self): 
+    def post(self):
+        # if 'like' in flask.request.form:
+                # flask.session.pop('username', None)
+                # return flask.redirect(flask.url_for('music'))
+
         # Suggest best songs
         bestTitles = BestSong.getBetsSongTitle()
 
@@ -85,13 +90,13 @@ class Music(flask.views.MethodView):
             currentUser = users.find_one({'username' :  flask.session['username']})            
             # for searchHisrory in currentUser['searchHistory']:
             #     if searchHistory['title']
-                        
-
+                                    
 
             # Search history of the current user             
             songs = []
             for searchHistory in currentUser['searchHistory']:
                 songs.append(searchHistory['title'])
+            
             return flask.render_template("music.html", lyric=lyric, artist=artist, title=title, time=time, downloadLink=downloadLink, songs=songs, bestSongs=bestTitles)
         else:
             flask.flash('Sorry, the music not found!')          

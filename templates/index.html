@@ -40,15 +40,15 @@ body {
     
     <br>
     <br>
+    <br>
     <div style="text-align: center;">
       {% if 'username' in session %}
-        <p>You are {{session['username']}}!</p>
-        <p>You have visited {{userVisitingNumber}} times our application!</p>
-        <p>Total number of visits: {{totalVisitingNumber}}</p>
+        <h3>You are {{session['username']}}!</h3>
+        <h4>You have visited {{userVisitingNumber}} times our application!</h4>        
       {% else %}        
-        <p>You are an anonymous user!</p>      
-        <p>Total visit numbers of our application: {{totalVisitingNumber}}</p>
+        <h4>You are an anonymous user!</h4>              
       {% endif %}
+      <h4>Total visit numbers of our application: {{totalVisitingNumber}}</h4>
     </div>
 
 </body>
