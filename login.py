@@ -2,6 +2,7 @@ import flask
 from db import mongo
 import bcrypt
 
+
 class Login(flask.views.MethodView):
     def get(self):
         return flask.render_template('login.html')

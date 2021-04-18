@@ -59,7 +59,7 @@ class Music(flask.views.MethodView):
         # open(f'./static/music/{title}.mp3', 'wb').write(r.content)
         
         # songs = os.listdir('./static/music')
-        if artist and title and time and downloadLink and lyric:                
+        if True: #artist and title and time and downloadLink and lyric:                
 
             # update user database with his/her search history
             users = mongo.db.users
