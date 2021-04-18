@@ -15,27 +15,42 @@ body {
   background-position: center;
 }
 </style>
-  <h1 id="Music_Cloud"><strong>Music Cloud</strong></h1>
+<body>
+    <h1 id="Music_Cloud"><strong>Music Cloud</strong></h1>
   
-  <div style="text-align: center;">
-    <img src="../static/imgs/Logo.jpg" alt="Logo" width="200" height="100">
-    <figcaption>Infinity Music</figcaption>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <div style="text-align: center;">
+      <img src="../static/imgs/Logo.jpg" alt="Logo" width="200" height="100">
+      <figcaption>Infinity Music</figcaption>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-  <div style="text-align: center">
-    <a href="{{url_for('login')}}"><input id= "create_but" type="submit" name="login_button" value="Login"></a>
+    <div style="text-align: center">
+      <a href="{{url_for('login')}}"><input id= "create_but" type="submit" name="login_button" value="Login"></a>
+      <br>
+    </div>
     <br>
-  </div>
-  <br>
-  <div style="text-align: center">
-    <a href="{{url_for('signup')}}"><input id= "create_but" type="submit" name="signup_button" value="SignUp"></a>
+    <div style="text-align: center">
+      <a href="{{url_for('signup')}}"><input id= "create_but" type="submit" name="signup_button" value="SignUp"></a>
+      <br>
+    </div>
+    
     <br>
-  </div>
+    <br>
+    <div style="text-align: center;">
+      {% if 'username' in session %}
+        <p>You are {{session['username']}}!</p>
+        <p>You have visited {{userVisitingNumber}} times our application!</p>
+        <p>Total number of visits: {{totalVisitingNumber}}</p>
+      {% else %}        
+        <p>You are an anonymous user!</p>      
+        <p>Total visit numbers of our application: {{totalVisitingNumber}}</p>
+      {% endif %}
+    </div>
+
 </body>
 
 </html>

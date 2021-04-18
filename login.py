@@ -19,8 +19,7 @@ class Login(flask.views.MethodView):
         
         username = flask.request.form['username']
         password = flask.request.form['password']
-        
-        
+
         if (username is None):
                 flask.flash("This username field is empty!")
                 return flask.redirect(flask.url_for('login'))
