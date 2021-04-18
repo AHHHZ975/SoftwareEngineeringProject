@@ -30,7 +30,7 @@ class Signup(flask.views.MethodView):
             if existingUsers is None:
                 if (passwordConfirm == password):
                     hashpass = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-                    users.insert({'username' : username, 'password' : hashpass, 'email' : email, 'phoneNumer': phoneNumber, 'searchHistory': []})
+                    users.insert({'username' : username, 'password' : hashpass, 'email' : email, 'phoneNumer': phoneNumber, 'searchHistory': [], 'playlist': []})
                     flask.session['username'] = username
                     flask.flash("The new account has been created successfully!")
                     return flask.redirect(flask.url_for('login'))

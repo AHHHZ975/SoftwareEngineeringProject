@@ -28,11 +28,11 @@
                 <li class="horizontal"><a href="{{url_for('about')}}">About</a></li>
                 <li class="horizontal"><a href="{{url_for('contact')}}">Contact</a></li>
                 {% if 'username' in session %}
-                <!-- <li><a href="{{url_for('search')}}">Search for a music</a></li> -->
-                <li class="horizontal"><a href="{{url_for('music')}}">music</a></li>
-                <li class="horizontal"><a href="{{url_for('login')}}">logout</a>
+                <li class="horizontal"><a href="{{url_for('playlist')}}">Playlist</a></li>
+                <li class="horizontal"><a href="{{url_for('music')}}">Music</a></li>
+                <li class="horizontal"><a href="{{url_for('login')}}">Logout</a>
                 {% else %}
-                <li class="horizontal"><a href="{{url_for('login')}}">login</a>
+                <li class="horizontal"><a href="{{url_for('login')}}">Login</a>
                 {% endif %}
             </ul>
         </div>

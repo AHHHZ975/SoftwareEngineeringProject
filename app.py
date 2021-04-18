@@ -1,3 +1,4 @@
+from playlist import Playlist
 import flask, flask.views
 from flask import app
 
@@ -7,6 +8,7 @@ from signup import Signup
 from login import Login
 from search import Search
 from music import Music
+from playlist import Playlist
 from main import Main
 from contact import Contact
 from about import About
@@ -39,6 +41,10 @@ app.add_url_rule('/search/',
                  
 app.add_url_rule('/music/',
                  view_func=Music.as_view('music'),
+                 methods=['GET', 'POST'])
+
+app.add_url_rule('/playlist/',
+                 view_func=Playlist.as_view('playlist'),
                  methods=['GET', 'POST'])
 
 
