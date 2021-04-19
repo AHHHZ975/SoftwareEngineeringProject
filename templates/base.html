@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {% block header %}{% endblock %}
+        {% block header %}
+        {% endblock %}
         <!-- <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" /> -->
         <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
         <script type="text/javascript" src="../static/js/jquery-1.7.1.min.js"></script>
+        <style>
+            * {box-sizing: border-box;}
+        
+            body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        
+            .topnav {
+            overflow: hidden;
+            /* background-color: #e9b0df; */
+            }
+        
+            .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+        
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+        
+            .topnav a.active {
+            background-color: #e9b0df;
+            color: white;
+            }
+        
+            .topnav .search-container {
+            float: right;
+            }
+        
+            .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            }
+        
+            .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            }
+        
+            .topnav .search-container button:hover {
+            background: #ccc;
+            }
+        
+            @media screen and (max-width: 600px) {
+            .topnav .search-container {
+            float: none;
+            }
+            .topnav a, .topnav input[type=text], .topnav .search-container button {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+            }
+            .topnav input[type=text] {
+            border: 1px solid #ccc;
+            }
+            }
+        </style>
     </head>
     <style>
         body {
@@ -20,19 +97,19 @@
         }
     </style>
     <body>
-        <div style="text-align: center;" id="nav">
+        <div class="topnav" style="text-align: center;" id="nav">
             <br>
             <ul>
                 {% block nav %}{% endblock %}
-                <li class="horizontal"><a href="{{url_for('main')}}">Home</a></li>
-                <li class="horizontal"><a href="{{url_for('about')}}">About</a></li>
-                <li class="horizontal"><a href="{{url_for('contact')}}">Contact</a></li>
+                <a href="{{url_for('main')}}">Home</a>
+                <a href="{{url_for('about')}}">About</a>
+                <a href="{{url_for('contact')}}">Contact</a>
                 {% if 'username' in session %}
-                <li class="horizontal"><a href="{{url_for('playlist')}}">Playlist</a></li>
-                <li class="horizontal"><a href="{{url_for('music')}}">Music</a></li>
-                <li class="horizontal"><a href="{{url_for('login')}}">Logout</a>
+                <a href="{{url_for('playlist')}}">Playlist</a>
+                <a href="{{url_for('music')}}">Music</a>
+                <a href="{{url_for('login')}}">Logout</a>
                 {% else %}
-                <li class="horizontal"><a href="{{url_for('login')}}">Login</a>
+                <a href="{{url_for('login')}}">Login</a>
                 {% endif %}
             </ul>
         </div>
