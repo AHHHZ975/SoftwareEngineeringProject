@@ -119,11 +119,10 @@
         <audio controls="controls" autoplay="autoplay">
             <source src="{{downloadLink}}">
         </audio>
-        
-        <!-- Like button
-        <form action="{{url_for('music')}}" method="post">                        
-            <input type="submit" name="like" value="like" />            
-        </form> -->
+                
+        <form action="{{url_for('music')}}" method="post" style="text-align: right;">                        
+            <input type="submit" name="clearHistory" value="Clear History" />            
+        </form>
 
         <br>
 

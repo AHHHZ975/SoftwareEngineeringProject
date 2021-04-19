@@ -24,9 +24,10 @@ class Music(flask.views.MethodView):
     
     @login_required
     def post(self):
-        # if 'like' in flask.request.form:
-                # flask.session.pop('username', None)
-                # return flask.redirect(flask.url_for('music'))
+        if 'clearHistory' in flask.request.form:
+            users = mongo.db.users            
+            print(users.update({'username': flask.session['username']}, {'$pull':{'searchHistory':{}}}))
+            return flask.redirect(flask.url_for('music'))
 
         # Suggest best songs
         bestTitles = BestSong.getBetsSongTitle()
