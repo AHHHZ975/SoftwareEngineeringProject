@@ -4686,3 +4686,876 @@ JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1618851661892	geckodriver	INFO	Listening on 127.0.0.1:1516
+1618851664951	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilebmRMLM"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618851667857	Marionette	INFO	Listening on port 1526
+1618851668108	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618851672087	Marionette	INFO	Stopped listening on port 1526
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618851672697	geckodriver	INFO	Listening on 127.0.0.1:1581
+1618851675738	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileUdT5uV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618851678054	Marionette	INFO	Listening on port 1591
+1618851678369	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1618851681943	Marionette	INFO	Stopped listening on port 1591
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\AmirHossein\AppData\Local\Temp\rust_mozprofileUdT5uV\protections.sqlite
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618851682662	geckodriver	INFO	Listening on 127.0.0.1:1696
+1618851685701	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileVC3Y7Q"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618851687977	Marionette	INFO	Listening on port 1708
+1618851688334	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1618851691878	Marionette	INFO	Stopped listening on port 1708
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618973404342	geckodriver	INFO	Listening on 127.0.0.1:14585
+1618973407403	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofiletUTFY6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618973411044	Marionette	INFO	Listening on port 14593
+1618973411561	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1618973416535	Marionette	INFO	Stopped listening on port 14593
+[Child 19176, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+1618973417672	geckodriver	INFO	Listening on 127.0.0.1:14650
+1618973420730	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilecn17Sq"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618973424353	Marionette	INFO	Listening on port 14658
+1618973424412	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1618973440489	Marionette	INFO	Stopped listening on port 14658
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618973441792	geckodriver	INFO	Listening on 127.0.0.1:14775
+1618973444817	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile0OIrtZ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618973448327	Marionette	INFO	Listening on port 14785
+1618973448479	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1618973453717	Marionette	INFO	Stopped listening on port 14785
+[Child 16044, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618973507106	geckodriver	INFO	Listening on 127.0.0.1:14906
+1618973510169	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilezLJoa2"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618973513656	Marionette	INFO	Listening on port 14914
+1618973513824	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618973518430	Marionette	INFO	Stopped listening on port 14914
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618973519309	geckodriver	INFO	Listening on 127.0.0.1:14971
+1618973522342	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileFopVpt"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618973525590	Marionette	INFO	Listening on port 14979
+1618973525988	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1618973553933	Marionette	INFO	Stopped listening on port 14979
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1618973555551	geckodriver	INFO	Listening on 127.0.0.1:1106
+1618973558590	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileiJ4v7v"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618973561687	Marionette	INFO	Listening on port 1114
+1618973561768	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1618973569192	Marionette	INFO	Stopped listening on port 1114
+JavaScript error: https://www.lyricfinder.org/lyrics/1191427/grateful-dead?track=china-cat-sunflower, line 38: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019051272	geckodriver	INFO	Listening on 127.0.0.1:5105
+1619019054290	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileTS3tyv"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019057232	Marionette	INFO	Listening on port 5113
+1619019057435	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619019060986	Marionette	INFO	Stopped listening on port 5113
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019061615	geckodriver	INFO	Listening on 127.0.0.1:5168
+1619019064657	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilerePilb"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019067230	Marionette	INFO	Listening on port 5179
+1619019067294	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019080900	Marionette	INFO	Stopped listening on port 5179
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 8980, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019081582	geckodriver	INFO	Listening on 127.0.0.1:5269
+1619019084609	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofiledki2FB"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019087240	Marionette	INFO	Listening on port 5278
+1619019087736	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019091263	Marionette	INFO	Stopped listening on port 5278
+[Child 10716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019150239	geckodriver	INFO	Listening on 127.0.0.1:5399
+1619019153279	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileFFBX1d"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019155854	Marionette	INFO	Listening on port 5407
+1619019155911	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619019159357	Marionette	INFO	Stopped listening on port 5407
+1619019159967	geckodriver	INFO	Listening on 127.0.0.1:5461
+1619019163010	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileCYfKOZ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019165796	Marionette	INFO	Listening on port 5474
+1619019166150	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019168435	Marionette	INFO	Stopped listening on port 5474
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019169120	geckodriver	INFO	Listening on 127.0.0.1:5561
+1619019172157	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofiled5GVgu"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019174767	Marionette	INFO	Listening on port 5569
+1619019174800	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019180014	Marionette	INFO	Stopped listening on port 5569
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019414855	geckodriver	INFO	Listening on 127.0.0.1:5712
+1619019417891	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileczxRHb"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019420239	Marionette	INFO	Listening on port 5720
+1619019420522	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619019424007	Marionette	INFO	Stopped listening on port 5720
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019424629	geckodriver	INFO	Listening on 127.0.0.1:5774
+1619019427669	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilejp0qgh"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019430625	Marionette	INFO	Listening on port 5783
+1619019430816	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019437921	Marionette	INFO	Stopped listening on port 5783
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 27120, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019438591	geckodriver	INFO	Listening on 127.0.0.1:5897
+1619019441616	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileXrOAyN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019444238	Marionette	INFO	Listening on port 5905
+1619019444751	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019448120	Marionette	INFO	Stopped listening on port 5905
+[Child 17712, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+[Child 17712, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019466246	geckodriver	INFO	Listening on 127.0.0.1:6012
+1619019469280	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileyIhImr"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019471808	Marionette	INFO	Listening on port 6020
+1619019471910	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619019475220	Marionette	INFO	Stopped listening on port 6020
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019475825	geckodriver	INFO	Listening on 127.0.0.1:6073
+1619019478852	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile3v69pI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019481381	Marionette	INFO	Listening on port 6081
+1619019481488	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019485826	Marionette	INFO	Stopped listening on port 6081
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+1619019486552	geckodriver	INFO	Listening on 127.0.0.1:6209
+1619019489589	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilecTfBXc"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019491988	Marionette	INFO	Listening on port 6217
+1619019492216	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019496099	Marionette	INFO	Stopped listening on port 6217
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019515896	geckodriver	INFO	Listening on 127.0.0.1:6335
+1619019518929	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileEx8qgf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019521664	Marionette	INFO	Listening on port 6343
+1619019522061	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619019525586	Marionette	INFO	Stopped listening on port 6343
+1619019526191	geckodriver	INFO	Listening on 127.0.0.1:6449
+1619019529218	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilecZjxoR"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019531632	Marionette	INFO	Listening on port 6457
+1619019531852	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019536831	Marionette	INFO	Stopped listening on port 6457
+[Child 26968, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\AmirHossein\AppData\Local\Temp\rust_mozprofilecZjxoR\protections.sqlite
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019537541	geckodriver	INFO	Listening on 127.0.0.1:6561
+1619019540577	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileV1VdeK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019543066	Marionette	INFO	Listening on port 6569
+1619019543206	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019546458	Marionette	INFO	Stopped listening on port 6569
+1619019734388	geckodriver	INFO	Listening on 127.0.0.1:6744
+1619019737425	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile6Nini9"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019739910	Marionette	INFO	Listening on port 6752
+1619019740063	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619019743517	Marionette	INFO	Stopped listening on port 6752
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019744136	geckodriver	INFO	Listening on 127.0.0.1:6805
+1619019747176	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileToiqiT"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019749600	Marionette	INFO	Listening on port 6814
+1619019749984	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019768326	Marionette	INFO	Stopped listening on port 6814
+[Child 21900, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+JavaScript error: https://www.lyricfinder.org/search/lyrics/someone%20like%20you, line 38: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019769169	geckodriver	INFO	Listening on 127.0.0.1:6943
+1619019772199	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileWXaE0P"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019775080	Marionette	INFO	Listening on port 6951
+1619019775332	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019779484	Marionette	INFO	Stopped listening on port 6951
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019827456	geckodriver	INFO	Listening on 127.0.0.1:7094
+1619019830490	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile7RJaA6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019832909	Marionette	INFO	Listening on port 7102
+1619019833003	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619019836407	Marionette	INFO	Stopped listening on port 7102
+1619019837014	geckodriver	INFO	Listening on 127.0.0.1:7157
+1619019840038	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileGcgy6H"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019842518	Marionette	INFO	Listening on port 7165
+1619019842663	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019858857	Marionette	INFO	Stopped listening on port 7165
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019859631	geckodriver	INFO	Listening on 127.0.0.1:7294
+1619019862651	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileuuzTNT"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019865195	Marionette	INFO	Listening on port 7304
+1619019865297	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019869049	Marionette	INFO	Stopped listening on port 7304
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019905452	geckodriver	INFO	Listening on 127.0.0.1:7444
+1619019908477	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile4esn7H"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019911082	Marionette	INFO	Listening on port 7452
+1619019911129	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619019914693	Marionette	INFO	Stopped listening on port 7452
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019915297	geckodriver	INFO	Listening on 127.0.0.1:7506
+1619019918337	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileuoZCFf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019920823	Marionette	INFO	Listening on port 7515
+1619019920973	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019939198	Marionette	INFO	Stopped listening on port 7515
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619019940023	geckodriver	INFO	Listening on 127.0.0.1:7710
+1619019943058	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilecAnD6O"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619019945447	Marionette	INFO	Listening on port 7718
+1619019945684	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619019950280	Marionette	INFO	Stopped listening on port 7718
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619021276729	geckodriver	INFO	Listening on 127.0.0.1:8045
+1619021279768	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilenHReE1"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021282294	Marionette	INFO	Listening on port 8054
+1619021282404	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619021285812	Marionette	INFO	Stopped listening on port 8054
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619021286417	geckodriver	INFO	Listening on 127.0.0.1:8107
+1619021289458	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileKQvzEa"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021291904	Marionette	INFO	Listening on port 8115
+1619021292115	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619021312140	Marionette	INFO	Stopped listening on port 8115
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619021312947	geckodriver	INFO	Listening on 127.0.0.1:8250
+1619021315976	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileFSgVjF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021318676	Marionette	INFO	Listening on port 8258
+1619021319105	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619021323388	Marionette	INFO	Stopped listening on port 8258
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 7212, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619021387926	geckodriver	INFO	Listening on 127.0.0.1:8395
+1619021390960	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile3qyGcn"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021393818	Marionette	INFO	Listening on port 8403
+1619021394091	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619021397563	Marionette	INFO	Stopped listening on port 8403
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619021398179	geckodriver	INFO	Listening on 127.0.0.1:8456
+1619021401185	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilethtQdl"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021403931	Marionette	INFO	Listening on port 8465
+1619021404314	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619021406925	Marionette	INFO	Stopped listening on port 8465
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619021407618	geckodriver	INFO	Listening on 127.0.0.1:8559
+1619021410638	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilePyJPqm"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021413443	Marionette	INFO	Listening on port 8567
+1619021413782	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619021417211	Marionette	INFO	Stopped listening on port 8567
+[Child 6216, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+[Child 6216, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619021843763	geckodriver	INFO	Listening on 127.0.0.1:8756
+1619021846802	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileGXLkPN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021849552	Marionette	INFO	Listening on port 8764
+1619021849947	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619021853493	Marionette	INFO	Stopped listening on port 8764
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619021854136	geckodriver	INFO	Listening on 127.0.0.1:8820
+1619021857162	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofiledR6mfO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021860076	Marionette	INFO	Listening on port 8829
+1619021860304	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619021870679	Marionette	INFO	Stopped listening on port 8829
+1619021871581	geckodriver	INFO	Listening on 127.0.0.1:8972
+1619021874612	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilekE1bFK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619021877233	Marionette	INFO	Listening on port 8980
+1619021877740	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619021882276	Marionette	INFO	Stopped listening on port 8980
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+1619022203786	geckodriver	INFO	Listening on 127.0.0.1:9136
+1619022206828	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileHEInCY"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022209553	Marionette	INFO	Listening on port 9144
+1619022209968	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619022213383	Marionette	INFO	Stopped listening on port 9144
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022213996	geckodriver	INFO	Listening on 127.0.0.1:9201
+1619022217038	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilegJnLf5"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022219550	Marionette	INFO	Listening on port 9209
+1619022219668	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619022222898	Marionette	INFO	Stopped listening on port 9209
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022223640	geckodriver	INFO	Listening on 127.0.0.1:9322
+1619022226670	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileqBufO7"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022229788	Marionette	INFO	Listening on port 9330
+1619022229833	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619022235598	Marionette	INFO	Stopped listening on port 9330
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022295153	geckodriver	INFO	Listening on 127.0.0.1:9449
+1619022298192	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile6SDre7"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022301451	Marionette	INFO	Listening on port 9457
+1619022301718	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619022305266	Marionette	INFO	Stopped listening on port 9457
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022305886	geckodriver	INFO	Listening on 127.0.0.1:9510
+1619022308914	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofiletwmbRV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022311598	Marionette	INFO	Listening on port 9519
+1619022312043	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619022316613	Marionette	INFO	Stopped listening on port 9519
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 17924, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022317360	geckodriver	INFO	Listening on 127.0.0.1:9644
+1619022320387	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileydemHI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022322996	Marionette	INFO	Listening on port 9652
+1619022323043	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619022328462	Marionette	INFO	Stopped listening on port 9652
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022373489	geckodriver	INFO	Listening on 127.0.0.1:9809
+1619022376517	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilekQf1Wy"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022379417	Marionette	INFO	Listening on port 9817
+1619022379656	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619022383071	Marionette	INFO	Stopped listening on port 9817
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022383783	geckodriver	INFO	Listening on 127.0.0.1:9871
+1619022386830	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileaxnFoP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022389347	Marionette	INFO	Listening on port 9880
+1619022389475	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619022392445	Marionette	INFO	Stopped listening on port 9880
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022393157	geckodriver	INFO	Listening on 127.0.0.1:9984
+1619022396186	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilef8qguQ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022398874	Marionette	INFO	Listening on port 9992
+1619022399312	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619022402696	Marionette	INFO	Stopped listening on port 9992
+[Child 30824, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+[Child 30824, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022544549	geckodriver	INFO	Listening on 127.0.0.1:10129
+1619022547591	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileSXyxP0"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022550182	Marionette	INFO	Listening on port 10137
+1619022550229	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619022553784	Marionette	INFO	Stopped listening on port 10137
+1619022554397	geckodriver	INFO	Listening on 127.0.0.1:10192
+1619022557423	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileYXi0uz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022560896	Marionette	INFO	Listening on port 10202
+1619022561060	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619022565065	Marionette	INFO	Stopped listening on port 10202
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619022565834	geckodriver	INFO	Listening on 127.0.0.1:10317
+1619022568871	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileapiGIg"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619022571580	Marionette	INFO	Listening on port 10325
+1619022572006	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619022575604	Marionette	INFO	Stopped listening on port 10325
+[Child 21132, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619023431257	geckodriver	INFO	Listening on 127.0.0.1:10526
+1619023434297	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileC8P1Ms"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619023437086	Marionette	INFO	Listening on port 10535
+1619023437429	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619023440881	Marionette	INFO	Stopped listening on port 10535
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619023441623	geckodriver	INFO	Listening on 127.0.0.1:10590
+1619023444641	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilenpJbiD"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619023447409	Marionette	INFO	Listening on port 10598
+1619023447769	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619023458858	Marionette	INFO	Stopped listening on port 10598
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1709: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1709: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1709: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1709: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1709: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619023459724	geckodriver	INFO	Listening on 127.0.0.1:10738
+1619023462752	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileYltBMq"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619023465478	Marionette	INFO	Listening on port 10747
+1619023465881	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619023470816	Marionette	INFO	Stopped listening on port 10747
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+[Child 30844, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619023828200	geckodriver	INFO	Listening on 127.0.0.1:10940
+1619023831237	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilege5fWa"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619023833870	Marionette	INFO	Listening on port 10948
+1619023834364	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619023837965	Marionette	INFO	Stopped listening on port 10948
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619023838609	geckodriver	INFO	Listening on 127.0.0.1:11003
+1619023841637	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile8gBXyI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619023844230	Marionette	INFO	Listening on port 11014
+1619023844284	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619023849986	Marionette	INFO	Stopped listening on port 11014
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\AmirHossein\AppData\Local\Temp\rust_mozprofile8gBXyI\protections.sqlite
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619023850832	geckodriver	INFO	Listening on 127.0.0.1:11124
+1619023853870	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileC8IZj5"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619023856686	Marionette	INFO	Listening on port 11132
+1619023856998	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619023860396	Marionette	INFO	Stopped listening on port 11132
+[Child 19268, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619025290220	geckodriver	INFO	Listening on 127.0.0.1:11484
+1619025293258	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileCUkB8J"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025296248	Marionette	INFO	Listening on port 11492
+1619025296417	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619025300061	Marionette	INFO	Stopped listening on port 11492
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619025300896	geckodriver	INFO	Listening on 127.0.0.1:11547
+1619025303917	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilepWsxbz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025306983	Marionette	INFO	Listening on port 11556
+1619025307065	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619025311300	Marionette	INFO	Stopped listening on port 11556
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619025312378	geckodriver	INFO	Listening on 127.0.0.1:11721
+1619025315410	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileTIBuYN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025318477	Marionette	INFO	Listening on port 11729
+1619025318564	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619025333488	Marionette	INFO	Stopped listening on port 11729
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619025404499	geckodriver	INFO	Listening on 127.0.0.1:11935
+1619025407531	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileqNSwyz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025410353	Marionette	INFO	Listening on port 11943
+1619025410684	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619025414257	Marionette	INFO	Stopped listening on port 11943
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619025414995	geckodriver	INFO	Listening on 127.0.0.1:11998
+1619025418011	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilebNQLcE"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025421093	Marionette	INFO	Listening on port 12007
+1619025421149	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619025425329	Marionette	INFO	Stopped listening on port 12007
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 6372, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+[Child 6372, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+1619025426358	geckodriver	INFO	Listening on 127.0.0.1:12124
+1619025429401	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofile922y4I"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025432646	Marionette	INFO	Listening on port 12132
+1619025433043	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619025441220	Marionette	INFO	Stopped listening on port 12132
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+1619025442610	geckodriver	INFO	Listening on 127.0.0.1:12329
+1619025445636	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileigj20g"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025448661	Marionette	INFO	Listening on port 12337
+1619025448788	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.getDocumentTitle is not a function
+JavaScript error: https://freemp3cloud.com/js/metsmalln.min.js, line 1: TypeError: u.removeNode is not a function
+1619025452338	Marionette	INFO	Stopped listening on port 12337
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619025453091	geckodriver	INFO	Listening on 127.0.0.1:12391
+1619025456118	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofilegmWHBy"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025459259	Marionette	INFO	Listening on port 12399
+1619025459769	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619025463895	Marionette	INFO	Stopped listening on port 12399
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619025464836	geckodriver	INFO	Listening on 127.0.0.1:12530
+1619025467857	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AMIRHO~1\\AppData\\Local\\Temp\\rust_mozprofileNpzxPH"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619025471065	Marionette	INFO	Listening on port 12538
+1619025471508	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
+1619025479934	Marionette	INFO	Stopped listening on port 12538
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1709: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1709: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\AmirHossein\AppData\Local\Temp\rust_mozprofileNpzxPH\protections.sqlite
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

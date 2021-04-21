@@ -44,11 +44,11 @@ body {
     <div style="text-align: center;">
       {% if 'username' in session %}
         <h3>You are {{session['username']}}!</h3>
-        <h4>You have visited {{userVisitingNumber}} times our application!</h4>        
+        <h3>You have visited {{userVisitingNumber}} times our application!</h3>        
       {% else %}        
-        <h4>You are an anonymous user!</h4>              
+        <h2>You are an anonymous user!</h2>              
       {% endif %}
-      <h4>Total visit numbers of our application: {{totalVisitingNumber}}</h4>
+      <h3>Total visit numbers of our application: {{totalVisitingNumber}}</h3>
     </div>
 
 </body>
